@@ -1,0 +1,147 @@
+/**
+ * Colors
+ */
+@backgroundGrey: #f9fafa;
+@standardGrey: #ddd;
+@white: #fff;
+@blue: #3498db;
+@green: #2ecc71;
+@text: #555;
+@darkText: #777;
+
+body {
+	margin: 0;
+	background-color: darken(@backgroundGrey, 5%);
+	-webkit-font-smoothing: antialiased;
+	p, h2, h3 {
+		color: @text;
+		font-family: 'Helvetica neue', Helvetica, arial, sans-serif;
+		a, unsubscribe, webversion {
+			color: @blue;
+			text-decoration: none;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+		&.text-right {
+		text-align: right;
+		}
+		&.text-center {
+			text-align: center;
+		}
+		&.text-left {
+			text-align: left;
+		}
+	}
+	h2 {
+		font-size: 24px;
+		margin: 0 0 22px;
+	}
+	h3 {
+		font-size: 19px;
+		margin: 0 0 18px;
+	}
+}
+.container {
+	width: 100%;
+	background-color: darken(@backgroundGrey, 5%);
+	.inner {
+		max-width: 800px;
+		.content {
+			width: 100%;
+			&.white-bg {
+				background-color: @white;
+			}
+			&.grey-bg {
+				background-color: darken(@backgroundGrey, 1%);
+			}
+			&.white-bg, &.grey-bg {
+				padding: 10px 0;
+			}
+			&.border {
+				border-left: 1px solid @standardGrey;
+				border-right: 1px solid @standardGrey;
+				&.border-top {
+					border-top: 1px solid @standardGrey;
+				}
+				&.border-bottom {
+					border-bottom: 1px solid @standardGrey;
+				}
+			}
+			p {
+				font-weight: 400;
+				font-size: 16px;
+				// Set the margins the same as font size for correct viewing in Outlook
+				margin: 16px 0;
+				line-height: 25px;
+				&.webversion, &.unsubscribe  {
+					font-size: 12px;
+					margin: 12px 0;
+					line-height: 19px;
+					margin: 3px 0;
+				}
+				&.unsubscribe {
+					color: @darkText;
+				}
+			}
+			td {
+				/**
+				 * Outlook doesn't support margin-attributes, instead – if we need it – we 
+				 * set a padding on the td-element. Also, remove the margin on the p-element
+				 * to function in non-Outlook clients.
+				 */
+				&.padding {
+					padding-top: 16px;
+					p {
+						margin-top: 0;
+					}
+				}
+			}
+		}
+	}
+}
+
+.header {
+	background-color: @white;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+}
+
+.footer {
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+.intro {
+	background-color: @white;
+	background-size: cover;
+	img {
+		max-width: 100px;
+	}
+}
+
+.button {
+	background-color: @blue;
+	padding: 10px 20px;
+	color: @white;
+	border-bottom: 2px solid darken(@blue, 10%);
+	text-decoration: none;
+	border-radius: 2px;
+	&.green {
+		background-color: @green;
+		border-bottom: 2px solid darken(@green, 10%);
+	}
+}
+
+.col {
+	img {
+		max-width: 200px;
+	}
+	.col-inner {
+		padding: 20px 20px 5px;
+	}
+	&.gmail-fix {
+		display: block;
+		width: 100%;
+	}
+}
