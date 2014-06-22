@@ -25,4 +25,4 @@ The template that comes along in the `src` directory is more or less ready to be
 
 ### More
 
-You can read more about this gulpfile and template at this blog post (in swedish).
+You can read more about this gulpfile and template at [this blog post](http://marcusolsson.me/2014/06/22/lite-battre-och-enklare-e-postmallar) (in swedish).
