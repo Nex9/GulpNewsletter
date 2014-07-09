@@ -21,7 +21,7 @@ You can put images and other assets pretty much wherever you want, just use rela
 
 ### About the template
 
-The template that comes along in the `src` directory is more or less ready to be used, it is tested (with litmus) in most clients. There are some minor issues in Outlook 2007 and Mac Sparrow. Will be fixed sooner or later.
+The template that comes along in the `src` directory is just an example. There are some major issues with Outlook.
 
 ### More
 
