@@ -1,6 +1,5 @@
 gulp        = require("gulp")
 browserSync = require 'browser-sync'
-reload      = browserSync.reload
 
 gutil       = require("gulp-util")
 notify      = require("gulp-notify")
@@ -11,9 +10,7 @@ path        = require("path")
 rename      = require("gulp-rename")
 fileinclude = require('gulp-file-include')
 modRewrite  = require 'connect-modrewrite'
-
-
-
+watch        = require 'gulp-watch'
 
 cssDir       = "./src/css/"
 targetCssDir = "./compiled/css/"
@@ -63,16 +60,14 @@ gulp.task 'browser-sync', ->
     server:
       baseDir: "./"
     startPath: "/compiled/index.html"
+    debugInfo: false
+    notify: false
 
 
-# gulp.task 'prepare', ['css', 'fileinclude', 'html'], ->
+gulp.task 'prepare', ['css', 'fileinclude', 'html'], (next) ->
+  next()
 
 
-gulp.task "watch", ['css', 'fileinclude', 'html', 'browser-sync'], ->
-  gulp.watch [
-    "./src/*"
-    "./src/css/*"
-    "./src/widgets/*"
-  ]
-  gulp.watch("*.html", ['fileinclude', 'html'])
-  gulp.watch("*.css", ['css', 'fileinclude'])
+gulp.task "watch", ['prepare', 'browser-sync'], ->
+  gulp.watch("**/*.html", ['fileinclude', 'html'])
+  gulp.watch("**/*.sass", ['css', 'fileinclude'])
