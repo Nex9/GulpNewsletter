@@ -33,7 +33,7 @@ gulp.task "css", ->
     .pipe prefix("last 20 versions")
     .pipe gulp.dest(targetCssDir)
     .pipe notify("SASS compiled and minified")
-    .pipe reload()
+    .pipe(browserSync.reload({stream:true}))
 
 gulp.task "fileinclude", ->
   gulp.src(rawHtml)
@@ -55,7 +55,7 @@ gulp.task "html", ["fileinclude"], ->
     .pipe rename("index-inline.html")
     .pipe gulp.dest(targetHtml)
     .pipe notify("CSS inlined")
-    .pipe reload()
+    .pipe(browserSync.reload({stream:true}))
 
 
 gulp.task 'browser-sync', ->
