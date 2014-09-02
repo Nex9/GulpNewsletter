@@ -22,17 +22,18 @@ newHtml      = "./compiled/index.html"
 targetHtml   = "./compiled/"
 
 
+gulp.task 'bs-reload', ->
+  browserSync.reload()
 
 gulp.task "css", ->
 
   # Compile less and autoprefix
   gulp.src(cssDir + "index.sass")
     .pipe sass()
-    .on "error", gutil.log
-    .pipe prefix("last 20 version")
+    .pipe prefix("last 20 versions")
     .pipe gulp.dest(targetCssDir)
     .pipe notify("SASS compiled and minified")
-
+    .pipe reload()
 
 gulp.task "fileinclude", ->
   gulp.src(rawHtml)
@@ -51,10 +52,10 @@ gulp.task "html", ["fileinclude"], ->
   # Make inline html-file
   gulp.src(newHtml)
     .pipe(inline(applyStyleTags: false, removeStyleTags: false))
-    .on "error", gutil.log
     .pipe rename("index-inline.html")
     .pipe gulp.dest(targetHtml)
     .pipe notify("CSS inlined")
+    .pipe reload()
 
 
 gulp.task 'browser-sync', ->
@@ -64,14 +65,14 @@ gulp.task 'browser-sync', ->
     startPath: "/compiled/index.html"
 
 
-gulp.task "watch", ['css', 'browser-sync'],  ->
+# gulp.task 'prepare', ['css', 'fileinclude', 'html'], ->
+
+
+gulp.task "watch", ['css', 'fileinclude', 'html', 'browser-sync'], ->
   gulp.watch [
     "./src/*"
     "./src/css/*"
     "./src/widgets/*"
-  ], [
-    "css"
-    "fileinclude"
-    "html"
   ]
-  gulp.watch("*.html", ['bs-reload'])
+  gulp.watch("*.html", ['fileinclude', 'html'])
+  gulp.watch("*.css", ['css', 'fileinclude'])
