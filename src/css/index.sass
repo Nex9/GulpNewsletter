@@ -1,7 +1,7 @@
 /**
  * Colors
  */
-$backgroundGrey: #f9fafa
+$backgroundGrey: darken(white, 5%)
 $standardGrey: #ddd
 $white: #fff
 $blue: #3498db
@@ -9,143 +9,283 @@ $green: #2ecc71
 $text: #555
 $darkText: #777
 
+
+
+@font-face
+  font-family: "Brown"
+  src: url("../fonts/lineto-brown-regular.eot?#iefix")
+  src: url("../fonts/lineto-brown-regular.eot?#iefix") format("eot"), url("../fonts/lineto-brown-regular.woff") format("woff"), url("../fonts/lineto-brown-regular.ttf") format("truetype"), url("../fonts/lineto-brown-regular.svg#iefix") format("svg")
+  font-weight: normal
+  font-style: normal
+
+
+@font-face
+  font-family: "Caslon #540 W01_i4"
+  src: url("../fonts/98bf2fa5-95a5-4aa4-a4a3-120e66f93351.eot?#iefix") format("eot")
+
+@font-face
+  font-family: "Caslon #540 W01"
+  src: url("../fonts/98bf2fa5-95a5-4aa4-a4a3-120e66f93351.eot?#iefix")
+  src: url("../fonts/98bf2fa5-95a5-4aa4-a4a3-120e66f93351.eot?#iefix") format("eot"),url("../fonts/5a5ff799-8e8a-43e2-8aba-364b86fbf4eb.woff") format("woff"),url("../fonts/8899c036-9034-4b78-8787-c8b568ff5b17.ttf") format("truetype"),url("../fonts/67818a0b-d79c-47f8-af38-7e37ba6e3fc2.svg#67818a0b-d79c-47f8-af38-7e37ba6e3fc2") format("svg")
+  font-weight: 400
+  font-style: italic
+
+@font-face
+  font-family: "Caslon #540 W01_n4"
+  src: url("../fonts/9dbc2605-edc0-4cd8-a724-3ad1875e12cf.eot?#iefix") format("eot")
+
+@font-face
+  font-family: "Caslon #540 W01"
+  src: url("../fonts/9dbc2605-edc0-4cd8-a724-3ad1875e12cf.eot?#iefix")
+  src: url("../fonts/9dbc2605-edc0-4cd8-a724-3ad1875e12cf.eot?#iefix") format("eot"),url("../fonts/1acf0583-572c-4726-b4ae-9db3dab026eb.woff") format("woff"),url("../fonts/5c8f39a9-bfea-4587-8098-e95b5bb75f40.ttf") format("truetype"),url("../fonts/f1f38831-22c8-403c-a4fd-ac9728868124.svg#f1f38831-22c8-403c-a4fd-ac9728868124") format("svg")
+  font-weight: 400
+  font-style: normal
+
+
+
 body
-	margin: 0
-	background-color: darken($backgroundGrey, 5%)
-	-webkit-font-smoothing: antialiased
-	p,
-	h2,
-	h3
-		color: $text
-		font-family: 'Helvetica neue', Helvetica, arial, sans-serif
-		a,
-		unsubscribe,
-		webversion
-			color: $blue
-			text-decoration: none
-			&:hover
-				text-decoration: underline
+  margin: 0
+  background-color: $backgroundGrey
+  -webkit-font-smoothing: antialiased
+  p,
+  h1,
+  h2,
+  h3
+    color: $text
+    font-family: Brown
+    text-align: center
+    a,
+    unsubscribe,
+    webversion
+      color: $blue
+      text-decoration: none
+      &:hover
+        text-decoration: underline
 
 
-		&.text-right
-			text-align: right
+    &.text-right
+      text-align: right
 
-		&.text-center
-			text-align: center
+    &.text-center
+      text-align: center
 
-		&.text-left
-			text-align: left
+    &.text-left
+      text-align: left
 
+  h1
+    font-size: 24px
+    margin: 0 0 22px
+    // text-transform: uppercase
 
-	h2
-		font-size: 24px
-		margin: 0 0 22px
+  h2
+    font-size: 24px
+    margin: 0 0 22px
 
-	h3
-		font-size: 19px
-		margin: 0 0 18px
+  h3
+    font-size: 19px
+    margin: 0 0 18px
 
 
 .container
-	width: 100%
-	background-color: darken($backgroundGrey, 5%)
-	// background-color: red
-	.inner
-		max-width: 800px
-		.content
-			width: 100%
-			&.white-bg
-				background-color: $white
+  width: 100%
+  background-color: $backgroundGrey
+  .inner
+    max-width: 640px
+    background-color: white
+    .content
+      &.padding
+        padding-left: 20px
+        padding-right: 20px
+      &.padding-top
+        padding-top: 20px
+      &.padding-bottom
+        padding-bottom: 20px
+      // p
+      //   font-weight: 400
+      //   font-size: 16px
+      //   // Set the margins the same as font size for correct viewing in Outlook
+      //   margin: 16px 0
+      //   line-height: 25px
+      //   &.webversion, &.unsubscribe
+      //     font-size: 12px
+      //     margin: 12px 0
+      //     line-height: 19px
+      //     margin: 3px 0
 
-			&.grey-bg
-				background-color: darken($backgroundGrey, 1%)
-
-			&.white-bg, &.grey-bg
-				padding: 10px 0
-
-			&.border
-				border-left: 1px solid $standardGrey
-				border-right: 1px solid $standardGrey
-				&.border-top
-					border-top: 1px solid $standardGrey
-
-				&.border-bottom
-					border-bottom: 1px solid $standardGrey
-
-
-			p
-				font-weight: 400
-				font-size: 16px
-				// Set the margins the same as font size for correct viewing in Outlook
-				margin: 16px 0
-				line-height: 25px
-				&.webversion, &.unsubscribe
-					font-size: 12px
-					margin: 12px 0
-					line-height: 19px
-					margin: 3px 0
-
-				&.unsubscribe
-					color: $darkText
+      //   &.unsubscribe
+      //     color: $darkText
 
 
-			td
-				/**
-				 * Outlook doesn't support margin-attributes, instead – if we need it – we
-				 * set a padding on the td-element. Also, remove the margin on the p-element
-				 * to function in non-Outlook clients.
-				 */
-				&.padding
-					padding-top: 16px
-					p
-						margin-top: 0
+      // td
+      //   /**
+      //    * Outlook doesn't support margin-attributes, instead – if we need it – we
+      //    * set a padding on the td-element. Also, remove the margin on the p-element
+      //    * to function in non-Outlook clients.
+      //    */
+      //   &.padding
+      //     padding-top: 16px
+      //     p
+      //       margin-top: 0
 
 
 
+.article-content
+  h1
+    margin: 0
+    font-size: 30px
+    line-height: 1em
+    text-align: center
+    font-weight: 200
+    margin: 5px 0
 
+  h2
+    color: #3C3C3C
+    font-size: 16px
+    line-height: 18px
+    margin: 0
+    margin-bottom: 10px
+
+
+  .more
+    font-family: Brown
+    color: #999
+    display: block
+    // text-transform: uppercase
+    // font-size: 10px
+    // margin-left: 2px
+    // white-space: nowrap
+    text-decoration: none
+    text-align: center
+    margin: 4px 0
+
+
+  p
+    font-size: 14px
+    margin: 14px 0
+    line-height: 1.3em
+    color: #4d4d4d
+    margin: 0
+    // font-family: "Caslon #540 W01", Times
+    // display: inline
+    text-align: center
+
+a
+  text-decoration: none
+  font-family: Brown
+    color: black
+  &:visited
+    color: black
+  &:active
+    color: black
+
+
+img
+  width: 100%
+
+
+
+.spacer
+  width: 100%
 
 
 
 .header
-	background-color: $white
-	border-top-right-radius: 10px
-	border-top-left-radius: 10px
+  width: 100%
+  margin-bottom: -2.6em
+  position: relative
+  z-index: 10
+  text-transform: uppercase
+  h1
+    font-size: 2em
+
+
+.seperator
+  width: 100%
+  td.border
+    border-top: 1px solid #ccc
+    text-align: center
+  p
+    margin: 0 auto
+    background: white
+    display: inline-block
+    position: relative
+    top: -5px
+    padding: 0 13px
+    font-family: "Caslon #540 W01", Times
+    font-size: 18px
+
+.textright,
+.textleft
+  .image
+    width: 280px
+    img
+      width: 100%
+  .space
+    width: 40px
+  .text
+    width: 280px
+
+
+.threecolums
+  width: 100%
+  table.item
+    width: 187px
+    margin-left: 20px
+    img
+      display: block
+      width: 100%
+
+.banner
+  width: 100%
+  img
+    width: 100%
+  &.wide
+    width: 100%
+    // display: none
+  &.small
+    // display: none
+    width: 300px
 
 
 .footer
-	border-bottom-right-radius: 10px
-	border-bottom-left-radius: 10px
-
-
-.intro
-	background-color: $white
-	background-size: cover
-	img
-		max-width: 100px
-
-
+  a
+    text-decoration: none
 
 .button
-	background-color: $blue
-	padding: 10px 20px
-	color: $white
-	border-bottom: 2px solid darken($blue, 10%)
-	text-decoration: none
-	border-radius: 2px
-	&.green
-		background-color: $green
-		border-bottom: 2px solid darken($green, 10%)
+  background-color: $blue
+  padding: 10px 20px
+  color: $white
+  border-bottom: 2px solid darken($blue, 10%)
+  text-decoration: none
+  border-radius: 2px
+  &.green
+    background-color: $green
+    border-bottom: 2px solid darken($green, 10%)
 
 
 
 .col
-	img
-		max-width: 200px
+  img
+    max-width: 200px
 
-	.col-inner
-		padding: 20px 20px 5px
+  .col-inner
+    padding: 20px 20px 5px
 
-	&.gmail-fix
-		display: block
-		width: 100%
+  &.gmail-fix
+    display: block
+    width: 100%
 
+.inline-block
+  display: inline-block
+@for $i from 1 to 200
+  .w#{$i}0px
+    width: #{$i}0px
+    @extend .inline-block
+  .h#{$i}0px
+    height: #{$i}0px
+    @extend .inline-block
+
+// percentage
+@for $i from 1 to 100
+  .w#{$i}
+    width: $i * 1%
