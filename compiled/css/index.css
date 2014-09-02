@@ -1,0 +1,134 @@
+@charset "UTF-8";
+/*
+ * Colors
+ */
+body {
+  margin: 0;
+  background-color: #ebeeee;
+  -webkit-font-smoothing: antialiased;
+  background: red; }
+  body p,
+  body h2,
+  body h3 {
+    color: #555555;
+    font-family: "Helvetica neue", Helvetica, arial, sans-serif;
+    text-align: right; }
+    body p a,
+    body p unsubscribe,
+    body p webversion,
+    body h2 a,
+    body h2 unsubscribe,
+    body h2 webversion,
+    body h3 a,
+    body h3 unsubscribe,
+    body h3 webversion {
+      color: #3498db;
+      text-decoration: none; }
+      body p a:hover,
+      body p unsubscribe:hover,
+      body p webversion:hover,
+      body h2 a:hover,
+      body h2 unsubscribe:hover,
+      body h2 webversion:hover,
+      body h3 a:hover,
+      body h3 unsubscribe:hover,
+      body h3 webversion:hover {
+        text-decoration: underline; }
+    body p.text-center,
+    body h2.text-center,
+    body h3.text-center {
+      text-align: center; }
+    body p.text-left,
+    body h2.text-left,
+    body h3.text-left {
+      text-align: left; }
+  body h2 {
+    font-size: 24px;
+    margin: 0 0 22px; }
+  body h3 {
+    font-size: 19px;
+    margin: 0 0 18px; }
+
+.container {
+  width: 100%;
+  background-color: #ebeeee; }
+  .container .inner {
+    max-width: 800px; }
+    .container .inner .content {
+      width: 100%; }
+      .container .inner .content.white-bg {
+        background-color: white; }
+      .container .inner .content.grey-bg {
+        background-color: #f6f8f8; }
+      .container .inner .content.white-bg, .container .inner .content.grey-bg {
+        padding: 10px 0; }
+      .container .inner .content.border {
+        border-left: 1px solid #dddddd;
+        border-right: 1px solid #dddddd; }
+        .container .inner .content.border.border-top {
+          border-top: 1px solid #dddddd; }
+        .container .inner .content.border.border-bottom {
+          border-bottom: 1px solid #dddddd; }
+      .container .inner .content p {
+        font-weight: 400;
+        font-size: 16px;
+        margin: 16px 0;
+        line-height: 25px; }
+        .container .inner .content p.webversion, .container .inner .content p.unsubscribe {
+          font-size: 12px;
+          margin: 12px 0;
+          line-height: 19px;
+          margin: 3px 0; }
+        .container .inner .content p.unsubscribe {
+          color: #777777; }
+      .container .inner .content td {
+        /*
+         * Outlook doesn't support margin-attributes, instead – if we need it – we
+         * set a padding on the td-element. Also, remove the margin on the p-element
+         * to function in non-Outlook clients.
+         */ }
+        .container .inner .content td.padding {
+          padding-top: 16px; }
+          .container .inner .content td.padding p {
+            margin-top: 0; }
+
+.header {
+  background-color: white;
+  -webkit-border-top-right-radius: 10px;
+          border-top-right-radius: 10px;
+  -webkit-border-top-left-radius: 10px;
+          border-top-left-radius: 10px; }
+
+.footer {
+  -webkit-border-bottom-right-radius: 10px;
+          border-bottom-right-radius: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+          border-bottom-left-radius: 10px; }
+
+.intro {
+  background-color: white;
+  -webkit-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover; }
+  .intro img {
+    max-width: 100px; }
+
+.button {
+  background-color: #3498db;
+  padding: 10px 20px;
+  color: white;
+  border-bottom: 2px solid #217dbb;
+  text-decoration: none;
+  -webkit-border-radius: 2px;
+          border-radius: 2px; }
+  .button.green {
+    background-color: #2ecc71;
+    border-bottom: 2px solid #25a25a; }
+
+.col img {
+  max-width: 200px; }
+.col .col-inner {
+  padding: 20px 20px 5px; }
+.col.gmail-fix {
+  display: block;
+  width: 100%; }

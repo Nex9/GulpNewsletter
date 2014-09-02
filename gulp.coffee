@@ -31,7 +31,7 @@ gulp.task "css", ->
     .on "error", gutil.log
     .pipe prefix("last 20 version")
     .pipe gulp.dest(targetCssDir)
-    .pipe notify("LESS compiled and minified")
+    .pipe notify("SASS compiled and minified")
 
 
 gulp.task "fileinclude", ->
@@ -64,7 +64,7 @@ gulp.task 'browser-sync', ->
     startPath: "/compiled/index.html"
 
 
-gulp.task "watch", ['browser-sync'],  ->
+gulp.task "watch", ['css', 'browser-sync'],  ->
   gulp.watch [
     "./src/*"
     "./src/css/*"
