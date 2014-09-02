@@ -5,14 +5,12 @@
 body {
   margin: 0;
   background-color: #ebeeee;
-  -webkit-font-smoothing: antialiased;
-  background: red; }
+  -webkit-font-smoothing: antialiased; }
   body p,
   body h2,
   body h3 {
     color: #555555;
-    font-family: "Helvetica neue", Helvetica, arial, sans-serif;
-    text-align: right; }
+    font-family: "Helvetica neue", Helvetica, arial, sans-serif; }
     body p a,
     body p unsubscribe,
     body p webversion,
@@ -34,6 +32,10 @@ body {
       body h3 unsubscribe:hover,
       body h3 webversion:hover {
         text-decoration: underline; }
+    body p.text-right,
+    body h2.text-right,
+    body h3.text-right {
+      text-align: right; }
     body p.text-center,
     body h2.text-center,
     body h3.text-center {

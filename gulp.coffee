@@ -52,7 +52,7 @@ gulp.task "html", ["fileinclude"], ->
     .pipe rename("index-inline.html")
     .pipe gulp.dest(targetHtml)
     .pipe notify("CSS inlined")
-    .pipe(browserSync.reload({stream:true}))
+    # .pipe(browserSync.reload({stream:true}))
 
 
 gulp.task 'browser-sync', ->
@@ -68,6 +68,6 @@ gulp.task 'prepare', ['css', 'fileinclude', 'html'], (next) ->
   next()
 
 
-gulp.task "watch", ['prepare', 'browser-sync'], ->
-  gulp.watch("**/*.html", ['fileinclude', 'html'])
-  gulp.watch("**/*.sass", ['css', 'fileinclude'])
+gulp.task "default", ['prepare', 'browser-sync'], ->
+  gulp.watch("./src/index.html", ['fileinclude', 'html'])
+  gulp.watch("./src/css/index.sass", ['css', 'fileinclude'])
