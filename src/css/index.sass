@@ -132,11 +132,11 @@ body
 .article-content
   h1
     margin: 0
-    font-size: 30px
+    font-size: 2em
     line-height: 1em
     text-align: center
     font-weight: 200
-    margin: 5px 0
+    margin: 0.5em 0
 
   h2
     color: #3C3C3C
@@ -216,15 +216,27 @@ img
 
 .textright,
 .textleft
-  .image
-    width: 280px
-    img
-      width: 100%
-  .space
-    width: 40px
-  .text
-    width: 280px
+  width: 100%
+  overflow: hidden
+  table.image
+    width: 48%
+    line-height: 0
+    // height: 100%
+  table.text
+    // display: block
+    width: 48%
 
+.textright
+  table.text
+    float: right
+  table.image
+    float: left
+
+.textleft
+  table.text
+    float: left
+  table.image
+    float: right
 
 .threecolums
   width: 100%

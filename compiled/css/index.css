@@ -104,11 +104,11 @@ body {
 
 .article-content h1 {
   margin: 0;
-  font-size: 30px;
+  font-size: 2em;
   line-height: 1em;
   text-align: center;
   font-weight: 200;
-  margin: 5px 0; }
+  margin: 0.5em 0; }
 .article-content h2 {
   color: #3c3c3c;
   font-size: 16px;
@@ -169,18 +169,27 @@ img {
     font-family: "Caslon #540 W01", Times;
     font-size: 18px; }
 
-.textright .image,
-.textleft .image {
-  width: 280px; }
-  .textright .image img,
-  .textleft .image img {
-    width: 100%; }
-.textright .space,
-.textleft .space {
-  width: 40px; }
-.textright .text,
-.textleft .text {
-  width: 280px; }
+.textright,
+.textleft {
+  width: 100%;
+  overflow: hidden; }
+  .textright table.image,
+  .textleft table.image {
+    width: 48%;
+    line-height: 0; }
+  .textright table.text,
+  .textleft table.text {
+    width: 48%; }
+
+.textright table.text {
+  float: right; }
+.textright table.image {
+  float: left; }
+
+.textleft table.text {
+  float: left; }
+.textleft table.image {
+  float: right; }
 
 .threecolums {
   width: 100%; }
