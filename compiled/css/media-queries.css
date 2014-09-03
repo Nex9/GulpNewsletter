@@ -1,3 +1,5 @@
-@media screen and (max-width: 568px) {
-  table.inner {
-    width: 100% !important; } }
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .threecolums table.item {
+    padding: 0px;
+    display: block;
+    margin-bottom: 2em; } }

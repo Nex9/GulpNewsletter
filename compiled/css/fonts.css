@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "Brown";
+  src: url("http://www.elin-kling.com/default/_fonts/lineto-brown-regular.eot?#iefix");
+  src: url("http://www.elin-kling.com/default/_fonts/lineto-brown-regular.eot?#iefix") format("eot"), url("http://www.elin-kling.com/default/_fonts/lineto-brown-regular.woff") format("woff"), url("http://www.elin-kling.com/default/_fonts/lineto-brown-regular.ttf") format("truetype"), url("http://www.elin-kling.com/default/_fonts/lineto-brown-regular.svg#iefix") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "Caslon #540 W01_i4";
+  src: url("http://www.elin-kling.com/default/_fonts/98bf2fa5-95a5-4aa4-a4a3-120e66f93351.eot?#iefix") format("eot"); }
+@font-face {
+  font-family: "Caslon #540 W01";
+  src: url("http://www.elin-kling.com/default/_fonts/98bf2fa5-95a5-4aa4-a4a3-120e66f93351.eot?#iefix");
+  src: url("http://www.elin-kling.com/default/_fonts/98bf2fa5-95a5-4aa4-a4a3-120e66f93351.eot?#iefix") format("eot"), url("http://www.elin-kling.com/default/_fonts/5a5ff799-8e8a-43e2-8aba-364b86fbf4eb.woff") format("woff"), url("http://www.elin-kling.com/default/_fonts/8899c036-9034-4b78-8787-c8b568ff5b17.ttf") format("truetype"), url("http://www.elin-kling.com/default/_fonts/67818a0b-d79c-47f8-af38-7e37ba6e3fc2.svg#67818a0b-d79c-47f8-af38-7e37ba6e3fc2") format("svg");
+  font-weight: 400;
+  font-style: italic; }
+@font-face {
+  font-family: "Caslon #540 W01_n4";
+  src: url("http://www.elin-kling.com/default/_fonts/9dbc2605-edc0-4cd8-a724-3ad1875e12cf.eot?#iefix") format("eot"); }
+@font-face {
+  font-family: "Caslon #540 W01";
+  src: url("http://www.elin-kling.com/default/_fonts/9dbc2605-edc0-4cd8-a724-3ad1875e12cf.eot?#iefix");
+  src: url("http://www.elin-kling.com/default/_fonts/9dbc2605-edc0-4cd8-a724-3ad1875e12cf.eot?#iefix") format("eot"), url("http://www.elin-kling.com/default/_fonts/1acf0583-572c-4726-b4ae-9db3dab026eb.woff") format("woff"), url("http://www.elin-kling.com/default/_fonts/5c8f39a9-bfea-4587-8098-e95b5bb75f40.ttf") format("truetype"), url("http://www.elin-kling.com/default/_fonts/f1f38831-22c8-403c-a4fd-ac9728868124.svg#f1f38831-22c8-403c-a4fd-ac9728868124") format("svg");
+  font-weight: 400;
+  font-style: normal; }

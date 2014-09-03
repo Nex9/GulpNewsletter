@@ -2,15 +2,16 @@
   "devDependencies": {
     "coffee-script": "*",
     "gulp": "*",
-    "jade": "*",
     "gulp-autoprefixer": "*",
+    "gulp-file-include": "*",
     "gulp-inline-css": "*",
-    "gulp-ruby-sass": "*",
+    "gulp-jade": "*",
     "gulp-notify": "*",
     "gulp-rename": "*",
+    "gulp-ruby-sass": "*",
     "gulp-util": "*",
-    "gulp-jade": "*",
-    "gulp-file-include": "*"
+    "gulp-zip": "^2.0.1",
+    "jade": "*"
   },
   "dependencies": {
     "browser-sync": "*",

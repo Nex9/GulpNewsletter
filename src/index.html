@@ -4,6 +4,11 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Lorem Ipsum</title>
+
+    <style type="text/css">
+      @@include('./compiled/css/fonts.css')
+    </style>
+
     <link rel="stylesheet" type="text/css" href="../compiled/css/index.css">
 
     <style type="text/css">
@@ -23,7 +28,6 @@
                   <tr>
                     <td>
                       <h1 class="logo">The latest form the wall</h1>
-                      <!-- <img src="./img/logo.png" alt="The Latest From The Wall" /> -->
                     </td>
                   </tr>
                 </table>
@@ -34,11 +38,11 @@
                     <table class="teaser content padding" cellpadding="0" cellspacing="0" border="0">
                       <tr>
                         <td>
-                          <!-- <img editable="true" label="Image" class="w600" width="600" border="0"> -->
-                          <img src="http://i1.createsend1.com/ei/r/6A/07C/0D5/csimport/unnamed-3.210736.jpg" border="0">
+                          <img editable="true" src="img/elin.jpg" label="Image" border="0" width="600">
+
                           <div class="article-content">
                             <multiline label="Description">
-                              <h1>Welcome to our newsletter</h1>
+                              <h2>Welcome to our newsletter</h2>
                               <p>Cusam hil ea nus debis simin et, occupta imus imil mo ommo molor ant vel ea quatio. Hen dellupt atinisi conecus.Sequisc iiscien isciis arcipsum quae. Lectae alibus eiure moluptae preu</p>
                               <a href="/the-wall/industry-news-monday-july-21st" class="more">see more</a>
                             </multiline>
@@ -48,7 +52,6 @@
 
                     </table>
                   </layout>
-
 
                   <layout label="Seperator">
                     @@include('./src/widgets/spacer.html', { "height": 50 })
@@ -62,39 +65,23 @@
                     @@include('./src/widgets/spacer.html', { "height": 30 })
                   </layout>
 
-
-
                   <layout label="Text left">
                     <table class="textleft content padding" cellpadding="0" cellspacing="0" border="0">
                       <tr>
-                        <td>
-
-                          <table class="image" cellpadding="0" cellspacing="0" border="0">
-                            <tr>
-                              <td>
-                                <img src="http://i1.createsend1.com/ei/r/6A/07C/0D5/csimport/unnamed-3.210736.jpg" border="0">
-                                <!-- <img editable="true" label="Image" class="w280" width="280" border="0"> -->
-                              </td>
-                            </tr>
-                          </table>
-
-                          <table class="text" cellpadding="0" cellspacing="0" border="0">
-                            <tr>
-                              <td>
-                                <div class="article-content">
-                                  <multiline label="Description">
-                                    <h1>Industry<br>News</h1>
-                                    <p>The Australian fashion retail consultant and creative advisor, Yasmin Sewell, is launching a capsule.
-                                    </p>
-                                    <a href="/the-wall/industry-news-monday-july-21st" class="more">
-                                      see more
-                                    </a>
-                                  </multiline>
-                                </div>
-                              </td>
-                            </tr>
-                          </table>
-
+                        <td class="image">
+                          <img editable="true" src="img/elin.jpg" label="Image" border="0" width="300">
+                        </td>
+                        <td class="text article-content">
+                          <div class="article-content">
+                            <multiline label="Description">
+                              <h2>Industry News</h2>
+                              <p>The Australian fashion retail consultant and creative advisor, Yasmin Sewell, is launching a capsule.
+                              </p>
+                              <a href="/the-wall/industry-news-monday-july-21st" class="more">
+                                see more
+                              </a>
+                            </multiline>
+                          </div>
                         </td>
                       </tr>
                     </table>
@@ -104,34 +91,20 @@
                   <layout label="Text Right">
                     <table class="textright content padding" cellpadding="0" cellspacing="0" border="0">
                       <tr>
-                        <td>
-
-                          <table class="image" cellpadding="0" cellspacing="0" border="0">
-                            <tr>
-                              <td>
-                                <img src="http://i1.createsend1.com/ei/r/6A/07C/0D5/csimport/unnamed-3.210736.jpg" border="0">
-                                <!-- <img editable="true" label="Image" class="w280" width="280" border="0"> -->
-                              </td>
-                            </tr>
-                          </table>
-
-                          <table class="text" cellpadding="0" cellspacing="0" border="0">
-                            <tr>
-                              <td>
-                                <div class="article-content">
-                                  <multiline label="Description">
-                                    <h1>Industry<br>News</h1>
-                                    <p>The Australian fashion retail consultant and creative advisor, Yasmin Sewell, is launching a capsule.
-                                    </p>
-                                    <a href="/the-wall/industry-news-monday-july-21st" class="more">
-                                      see more
-                                    </a>
-                                  </multiline>
-                                </div>
-                              </td>
-                            </tr>
-                          </table>
-
+                        <td class="image">
+                          <img editable="true" src="img/elin.jpg" label="Image" border="0" width="300">
+                        </td>
+                        <td class="text">
+                          <div class="article-content">
+                            <multiline label="Description">
+                              <h2>Industry News</h2>
+                              <p>The Australian fashion retail consultant and creative advisor, Yasmin Sewell, is launching a capsule.
+                              </p>
+                              <a href="/the-wall/industry-news-monday-july-21st" class="more">
+                                see more
+                              </a>
+                            </multiline>
+                          </div>
                         </td>
                       </tr>
                     </table>
@@ -142,19 +115,14 @@
                     <table class="threecolums content" cellpadding="0" cellspacing="0" border="0">
                       <tr><td>
 
-                        <table align="left" class="item" cellpadding="0" cellspacing="0" border="0">
-                          <tr>
-                            <td valign="bottom">
-                              <img editable="true" label="Image 1" border="0">
-                            </td>
-                          </tr>
-                          <tr><td valign="top" class="h15px"></td></tr>
+                        <table class="item" cellpadding="0" cellspacing="0" border="0">
                           <tr>
                             <td>
-                              <div align="left" class="article-content">
+                              <div class="article-content">
+                                <img editable="true" label="Image 1" src="img/elin.jpg" border="0" width="186">
+                                <br />
                                 <multiline label="Description">
-                                  <img label="Image 1" src="http://i5.createsend1.com/ei/r/6A/07C/0D5/csimport/unnamed-3.212041.jpg">
-                                  <h2>Sachin + Babi</h2>
+                                  <h3>Sachin + Babi</h3>
                                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                                 </multiline>
                               </div>
@@ -162,19 +130,14 @@
                           </tr>
                         </table>
 
-                        <table align="left" class="item" cellpadding="0" cellspacing="0" border="0">
+                        <table class="item" cellpadding="0" cellspacing="0" border="0">
                           <tr>
                             <td>
-                              <img editable="true" label="Image 2" border="0">
-                            </td>
-                          </tr>
-                          <tr><td valign="top" class="h15px"></td></tr>
-                          <tr>
-                            <td valign="top">
-                              <div align="left" class="article-content">
+                              <div class="article-content">
+                                <img editable="true" label="Image 1" src="img/elin.jpg" border="0" width="186">
+                                <br />
                                 <multiline label="Description">
-                                  <img label="Image 2" class="w190" width="190" border="0" src="http://i5.createsend1.com/ei/r/6A/07C/0D5/csimport/unnamed-3.212041.jpg">
-                                  <h2>Sachin + Babi</h2>
+                                  <h3>Sachin + Babi</h3>
                                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                                 </multiline>
                               </div>
@@ -182,19 +145,14 @@
                           </tr>
                         </table>
 
-                        <table align="left" class="item" cellpadding="0" cellspacing="0" border="0">
+                        <table class="item" cellpadding="0" cellspacing="0" border="0">
                           <tr>
                             <td>
-                              <img editable="true" label="Image 3" border="0">
-                            </td>
-                          </tr>
-                          <tr><td valign="top" class="h15px"></td></tr>
-                          <tr>
-                            <td valign="top">
-                              <div align="left" class="article-content">
+                              <div class="article-content">
+                                <img editable="true" label="Image 1" src="img/elin.jpg" border="0" width="186">
+                                <br />
                                 <multiline label="Description">
-                                  <img label="Image 3" border="0" src="http://i5.createsend1.com/ei/r/6A/07C/0D5/csimport/unnamed-3.212041.jpg">
-                                  <h2>Sachin + Babi</h2>
+                                  <h3>Sachin + Babi</h3>
                                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                                 </multiline>
                               </div>
@@ -208,11 +166,11 @@
                   </layout>
 
                   <layout label="Banner Ad">
+                    @@include('./src/widgets/spacer.html', { "height": 40 })
                     <table class="banner wide content padding" cellpadding="0" cellspacing="0" border="0">
                       <tr>
                         <td>
-                          <!-- <img editable="true" label="Image" class="w600" width="600" border="0"> -->
-                          <img src="http://i2.createsend1.com/ei/r/6A/07C/0D5/csimport/ad.123209.jpg" border="0">
+                          <img src="img/ad.jpg" editable="true" label="600x120" border="0" width="600">
                         </td>
                       </tr>
                     </table>
@@ -221,41 +179,57 @@
 
                 </repeater>
 
-                <table class="footer content padding padding-bottom" cellpadding="0" cellspacing="0" border="0">
+
+                @@include('./src/widgets/spacer.html', { "height": 20 })
+                <table class="content seperator padding" cellpadding="0" cellspacing="0" border="0">
                   <tr>
-                    <td class="w600 links" width="600" valign="top" align="center">
-                    <a href="http://www.elin-kling.com/the-wall/category/shopping">Shopping</a>
-                    <a href="http://www.elin-kling.com/the-wall/category/beauty">Beauty</a>
-                    <a href="http://www.elin-kling.com/the-wall/category/lifestyle">Lifestyle</a>
-                    <a href="http://www.elin-kling.com/the-wall/category/elin">Elin</a>
-                    <a href="http://www.elin-kling.com/the-wall/category/people">People</a>
-                    <br>
-                    <br>
-                    <br>
+                    <td class="border">
+                      <p><i>More on</i> THE WALL</p>
+                    </td>
+                  </tr>
+                </table>
+                @@include('./src/widgets/spacer.html', { "height": 30 })
+
+                <table class="footer padding padding-bottom" cellpadding="0" cellspacing="0" border="0">
+                  <tr>
+                    <td class="links" align="center">
+                      <a href="http://www.elin-kling.com/the-wall/category/shopping">Shopping</a>
+                      <a href="http://www.elin-kling.com/the-wall/category/beauty">Beauty</a>
+                      <a href="http://www.elin-kling.com/the-wall/category/lifestyle">Lifestyle</a>
+                      <a href="http://www.elin-kling.com/the-wall/category/elin">Elin</a>
+                      <a href="http://www.elin-kling.com/the-wall/category/people">People</a>
+                      <br />
+                      <br />
                     </td>
                   </tr>
                   <tr>
-                    <td class="w600" width="600" valign="top" align="center">
-                      <p id="street-address" align="center" class="footer-content-center">
+                    <td>
+                      <p class="street-address" align="center">
                         Kling LLC<br>
                         200 Centre Street, 10013 New York
                       </p>
                       <p align="center" class="footer-content-center">
                       <br>
                       <br>
-                      <webversion>web version</webversion> &nbsp;&nbsp; &nbsp;&nbsp;<preferences lang="en">preferences</preferences>&nbsp;&nbsp; &nbsp;&nbsp;<unsubscribe>unsubscribe</unsubscribe>
+
+                      <webversion>web version</webversion> &nbsp;&nbsp; &nbsp;&nbsp;
+                      <preferences lang="en">preferences</preferences>&nbsp;&nbsp; &nbsp;&nbsp;
+                      <unsubscribe>unsubscribe</unsubscribe>
                       </p>
                     </td>
                   </tr>
                   <tr>
-                    <td valign="top" width="auto" align="center">
-                    <tweet><img style="display: inline;" width="14" height="14" src="img/twitter.png" border="0" alt="Twitter icon"></tweet>
-                    <fblike><img style="display: inline;" width="14" height="14" src="img/facebook.png" border="0" alt="Facebook icon"></fblike>
-                    <forwardtoafriend lang="en"><img style="display: inline;" width="14" height="14" src="img/mail.png" border="0" alt="Forward icon"></forwardtoafriend>
+                    <td class="social">
+                      <tweet><img src="img/twitter.png" border="0" alt="Twitter icon"></tweet>
+
+                      <fblike><img src="img/facebook.png" border="0" alt="Facebook icon"></fblike>
+
+                      <forwardtoafriend lang="en"><img src="img/mail.png" border="0" alt="Forward icon"></forwardtoafriend>
                     </td>
                   </tr>
 
                 </table>
+                @@include('./src/widgets/spacer.html', { "height": 20 })
 
               </td>
             </tr>

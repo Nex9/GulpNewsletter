@@ -1,92 +1,98 @@
 /*
  * Colors
  */
-@font-face {
-  font-family: "Brown";
-  src: url("../fonts/lineto-brown-regular.eot?#iefix");
-  src: url("../fonts/lineto-brown-regular.eot?#iefix") format("eot"), url("../fonts/lineto-brown-regular.woff") format("woff"), url("../fonts/lineto-brown-regular.ttf") format("truetype"), url("../fonts/lineto-brown-regular.svg#iefix") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: "Caslon #540 W01_i4";
-  src: url("../fonts/98bf2fa5-95a5-4aa4-a4a3-120e66f93351.eot?#iefix") format("eot"); }
-@font-face {
-  font-family: "Caslon #540 W01";
-  src: url("../fonts/98bf2fa5-95a5-4aa4-a4a3-120e66f93351.eot?#iefix");
-  src: url("../fonts/98bf2fa5-95a5-4aa4-a4a3-120e66f93351.eot?#iefix") format("eot"), url("../fonts/5a5ff799-8e8a-43e2-8aba-364b86fbf4eb.woff") format("woff"), url("../fonts/8899c036-9034-4b78-8787-c8b568ff5b17.ttf") format("truetype"), url("../fonts/67818a0b-d79c-47f8-af38-7e37ba6e3fc2.svg#67818a0b-d79c-47f8-af38-7e37ba6e3fc2") format("svg");
-  font-weight: 400;
-  font-style: italic; }
-@font-face {
-  font-family: "Caslon #540 W01_n4";
-  src: url("../fonts/9dbc2605-edc0-4cd8-a724-3ad1875e12cf.eot?#iefix") format("eot"); }
-@font-face {
-  font-family: "Caslon #540 W01";
-  src: url("../fonts/9dbc2605-edc0-4cd8-a724-3ad1875e12cf.eot?#iefix");
-  src: url("../fonts/9dbc2605-edc0-4cd8-a724-3ad1875e12cf.eot?#iefix") format("eot"), url("../fonts/1acf0583-572c-4726-b4ae-9db3dab026eb.woff") format("woff"), url("../fonts/5c8f39a9-bfea-4587-8098-e95b5bb75f40.ttf") format("truetype"), url("../fonts/f1f38831-22c8-403c-a4fd-ac9728868124.svg#f1f38831-22c8-403c-a4fd-ac9728868124") format("svg");
-  font-weight: 400;
-  font-style: normal; }
 body {
   margin: 0;
   background-color: #f2f2f2;
   -webkit-font-smoothing: antialiased; }
-  body p,
-  body h1,
-  body h2,
-  body h3 {
-    color: #555555;
-    font-family: brown;
+
+p,
+h1,
+h2,
+h3 {
+  color: black;
+  font-family: "Brown";
+  text-align: center; }
+  p a,
+  p unsubscribe,
+  p webversion,
+  p preferences,
+  h1 a,
+  h1 unsubscribe,
+  h1 webversion,
+  h1 preferences,
+  h2 a,
+  h2 unsubscribe,
+  h2 webversion,
+  h2 preferences,
+  h3 a,
+  h3 unsubscribe,
+  h3 webversion,
+  h3 preferences {
+    color: gray;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: "Caslon #540 W01", Times;
+    font-size: 13px; }
+    p a:hover,
+    p unsubscribe:hover,
+    p webversion:hover,
+    p preferences:hover,
+    h1 a:hover,
+    h1 unsubscribe:hover,
+    h1 webversion:hover,
+    h1 preferences:hover,
+    h2 a:hover,
+    h2 unsubscribe:hover,
+    h2 webversion:hover,
+    h2 preferences:hover,
+    h3 a:hover,
+    h3 unsubscribe:hover,
+    h3 webversion:hover,
+    h3 preferences:hover {
+      text-decoration: underline; }
+  p.text-right,
+  h1.text-right,
+  h2.text-right,
+  h3.text-right {
+    text-align: right; }
+  p.text-center,
+  h1.text-center,
+  h2.text-center,
+  h3.text-center {
     text-align: center; }
-    body p a,
-    body p unsubscribe,
-    body p webversion,
-    body h1 a,
-    body h1 unsubscribe,
-    body h1 webversion,
-    body h2 a,
-    body h2 unsubscribe,
-    body h2 webversion,
-    body h3 a,
-    body h3 unsubscribe,
-    body h3 webversion {
-      color: #3498db;
-      text-decoration: none; }
-      body p a:hover,
-      body p unsubscribe:hover,
-      body p webversion:hover,
-      body h1 a:hover,
-      body h1 unsubscribe:hover,
-      body h1 webversion:hover,
-      body h2 a:hover,
-      body h2 unsubscribe:hover,
-      body h2 webversion:hover,
-      body h3 a:hover,
-      body h3 unsubscribe:hover,
-      body h3 webversion:hover {
-        text-decoration: underline; }
-    body p.text-right,
-    body h1.text-right,
-    body h2.text-right,
-    body h3.text-right {
-      text-align: right; }
-    body p.text-center,
-    body h1.text-center,
-    body h2.text-center,
-    body h3.text-center {
-      text-align: center; }
-    body p.text-left,
-    body h1.text-left,
-    body h2.text-left,
-    body h3.text-left {
-      text-align: left; }
-  body h1 {
-    font-size: 24px;
-    margin: 0 0 22px; }
-  body h2 {
-    font-size: 24px;
-    margin: 0 0 22px; }
-  body h3 {
-    font-size: 19px;
-    margin: 0 0 18px; }
+  p.text-left,
+  h1.text-left,
+  h2.text-left,
+  h3.text-left {
+    text-align: left; }
+
+a {
+  text-decoration: none;
+  font-family: "Brown";
+  color: black; }
+  a:visited {
+    color: black; }
+  a:active {
+    color: black; }
+
+h1 {
+  margin: 0;
+  font-size: 38px;
+  line-height: 38px;
+  text-align: center;
+  font-weight: 200;
+  margin: 12px 0; }
+
+h2 {
+  color: #3c3c3c;
+  font-size: 24px;
+  line-height: 24px;
+  margin: 12px 0; }
+
+h3 {
+  font-size: 19px;
+  margin: 0 0 18px; }
 
 .container {
   width: 100%;
@@ -102,44 +108,24 @@ body {
     .container .inner .content.padding-bottom {
       padding-bottom: 20px; }
 
-.article-content h1 {
-  margin: 0;
-  font-size: 2em;
-  line-height: 1em;
-  text-align: center;
-  font-weight: 200;
-  margin: 0.5em 0; }
-.article-content h2 {
-  color: #3c3c3c;
-  font-size: 16px;
-  line-height: 18px;
-  margin: 0;
-  margin-bottom: 10px; }
-.article-content .more {
-  font-family: brown;
-  color: #999999;
+a.more {
+  font-family: "Brown";
+  color: gray;
   display: block;
   text-decoration: none;
   text-align: center;
-  margin: 4px 0; }
-.article-content p {
+  margin: 4px 0;
+  font-size: 14px; }
+
+p {
   font-size: 14px;
   margin: 14px 0;
-  line-height: 1.3em;
-  color: #4d4d4d;
+  line-height: 18px;
+  color: black;
   margin: 0;
   text-align: center; }
 
-a {
-  text-decoration: none;
-  font-family: brown;
-    font-family-color: black; }
-  a:visited {
-    color: black; }
-  a:active {
-    color: black; }
-
-img {
+.content img {
   width: 100%; }
 
 .spacer {
@@ -147,12 +133,7 @@ img {
 
 .header {
   width: 100%;
-  margin-bottom: -2.6em;
-  position: relative;
-  z-index: 10;
   text-transform: uppercase; }
-  .header h1 {
-    font-size: 2em; }
 
 .seperator {
   width: 100%; }
@@ -167,62 +148,66 @@ img {
     top: -5px;
     padding: 0 13px;
     font-family: "Caslon #540 W01", Times;
-    font-size: 18px; }
+    font-size: 18px;
+    color: black; }
 
 .textright,
 .textleft {
   width: 100%;
-  overflow: hidden; }
-  .textright table.image,
-  .textleft table.image {
-    width: 48%;
+  overflow: hidden;
+  position: relative; }
+  .textright td,
+  .textleft td {
+    width: 50%; }
+  .textright td.image,
+  .textleft td.image {
     line-height: 0; }
-  .textright table.text,
-  .textleft table.text {
-    width: 48%; }
+  .textright td.text,
+  .textleft td.text {
+    padding: 10px; }
 
-.textright table.text {
-  float: right; }
-.textright table.image {
-  float: left; }
-
-.textleft table.text {
-  float: left; }
-.textleft table.image {
-  float: right; }
+.textleft td.text {
+  position: relative;
+  left: -50%; }
+.textleft td.image {
+  position: relative;
+  left: 50%; }
 
 .threecolums {
-  width: 100%; }
+  width: 100%;
+  text-align: center;
+  padding: 10px; }
   .threecolums table.item {
-    width: 187px;
-    margin-left: 20px; }
+    padding: 10px;
+    display: table-cell; }
     .threecolums table.item img {
-      display: block;
-      width: 100%; }
+      display: block; }
 
 .banner {
   width: 100%; }
-  .banner img {
-    width: 100%; }
   .banner.wide {
     width: 100%; }
   .banner.small {
     width: 300px; }
 
-.footer a {
-  text-decoration: none; }
-
-.button {
-  background-color: #3498db;
-  padding: 10px 20px;
-  color: white;
-  border-bottom: 2px solid #217dbb;
-  text-decoration: none;
-  -webkit-border-radius: 2px;
-          border-radius: 2px; }
-  .button.green {
-    background-color: #2ecc71;
-    border-bottom: 2px solid #25a25a; }
+.footer {
+  width: 100%; }
+  .footer a {
+    text-decoration: none;
+    margin: 0 10px; }
+  .footer .links {
+    font-size: 14px; }
+  .footer .street-address {
+    color: gray;
+    white-space: normal;
+    font-family: "Caslon #540 W01", Times;
+    font-size: 13px; }
+  .footer .social {
+    text-align: center; }
+    .footer .social img {
+      width: 14px;
+      height: 14px;
+      display: inline; }
 
 .col img {
   max-width: 200px; }

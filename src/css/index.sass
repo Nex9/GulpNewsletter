@@ -2,44 +2,14 @@
  * Colors
  */
 $backgroundGrey: darken(white, 5%)
-$standardGrey: #ddd
+$standardGrey: darken(white, 50%)
 $white: #fff
 $blue: #3498db
 $green: #2ecc71
-$text: #555
-$darkText: #777
+$text: black
+$lightText: lighten(black, 50%)
 
 
-
-@font-face
-  font-family: "Brown"
-  src: url("../fonts/lineto-brown-regular.eot?#iefix")
-  src: url("../fonts/lineto-brown-regular.eot?#iefix") format("eot"), url("../fonts/lineto-brown-regular.woff") format("woff"), url("../fonts/lineto-brown-regular.ttf") format("truetype"), url("../fonts/lineto-brown-regular.svg#iefix") format("svg")
-  font-weight: normal
-  font-style: normal
-
-
-@font-face
-  font-family: "Caslon #540 W01_i4"
-  src: url("../fonts/98bf2fa5-95a5-4aa4-a4a3-120e66f93351.eot?#iefix") format("eot")
-
-@font-face
-  font-family: "Caslon #540 W01"
-  src: url("../fonts/98bf2fa5-95a5-4aa4-a4a3-120e66f93351.eot?#iefix")
-  src: url("../fonts/98bf2fa5-95a5-4aa4-a4a3-120e66f93351.eot?#iefix") format("eot"),url("../fonts/5a5ff799-8e8a-43e2-8aba-364b86fbf4eb.woff") format("woff"),url("../fonts/8899c036-9034-4b78-8787-c8b568ff5b17.ttf") format("truetype"),url("../fonts/67818a0b-d79c-47f8-af38-7e37ba6e3fc2.svg#67818a0b-d79c-47f8-af38-7e37ba6e3fc2") format("svg")
-  font-weight: 400
-  font-style: italic
-
-@font-face
-  font-family: "Caslon #540 W01_n4"
-  src: url("../fonts/9dbc2605-edc0-4cd8-a724-3ad1875e12cf.eot?#iefix") format("eot")
-
-@font-face
-  font-family: "Caslon #540 W01"
-  src: url("../fonts/9dbc2605-edc0-4cd8-a724-3ad1875e12cf.eot?#iefix")
-  src: url("../fonts/9dbc2605-edc0-4cd8-a724-3ad1875e12cf.eot?#iefix") format("eot"),url("../fonts/1acf0583-572c-4726-b4ae-9db3dab026eb.woff") format("woff"),url("../fonts/5c8f39a9-bfea-4587-8098-e95b5bb75f40.ttf") format("truetype"),url("../fonts/f1f38831-22c8-403c-a4fd-ac9728868124.svg#f1f38831-22c8-403c-a4fd-ac9728868124") format("svg")
-  font-weight: 400
-  font-style: normal
 
 
 
@@ -47,43 +17,63 @@ body
   margin: 0
   background-color: $backgroundGrey
   -webkit-font-smoothing: antialiased
-  p,
-  h1,
-  h2,
-  h3
-    color: $text
-    font-family: Brown
+p,
+h1,
+h2,
+h3
+  color: $text
+  font-family: 'Brown'
+  text-align: center
+  a,
+  unsubscribe,
+  webversion,
+  preferences
+    color: $standardGrey
+    text-decoration: none
+    cursor: pointer
+    font-family: "Caslon #540 W01", Times
+    font-size: 13px
+
+    &:hover
+      text-decoration: underline
+
+
+  &.text-right
+    text-align: right
+
+  &.text-center
     text-align: center
-    a,
-    unsubscribe,
-    webversion
-      color: $blue
-      text-decoration: none
-      &:hover
-        text-decoration: underline
+
+  &.text-left
+    text-align: left
+
+a
+  text-decoration: none
+  font-family: 'Brown'
+  color: black
+  &:visited
+    color: black
+  &:active
+    color: black
+
+h1
+  margin: 0
+  font-size: 38px
+  line-height: 38px
+  text-align: center
+  font-weight: 200
+  margin: 12px 0
+
+h2
+  color: #3C3C3C
+  font-size: 24px
+  line-height: 24px
+  margin: 12px 0
 
 
-    &.text-right
-      text-align: right
-
-    &.text-center
-      text-align: center
-
-    &.text-left
-      text-align: left
-
-  h1
-    font-size: 24px
-    margin: 0 0 22px
-    // text-transform: uppercase
-
-  h2
-    font-size: 24px
-    margin: 0 0 22px
-
-  h3
-    font-size: 19px
-    margin: 0 0 18px
+h3
+  font-size: 19px
+  margin: 0 0 18px
 
 
 .container
@@ -100,87 +90,33 @@ body
         padding-top: 20px
       &.padding-bottom
         padding-bottom: 20px
-      // p
-      //   font-weight: 400
-      //   font-size: 16px
-      //   // Set the margins the same as font size for correct viewing in Outlook
-      //   margin: 16px 0
-      //   line-height: 25px
-      //   &.webversion, &.unsubscribe
-      //     font-size: 12px
-      //     margin: 12px 0
-      //     line-height: 19px
-      //     margin: 3px 0
-
-      //   &.unsubscribe
-      //     color: $darkText
 
 
-      // td
-      //   /**
-      //    * Outlook doesn't support margin-attributes, instead – if we need it – we
-      //    * set a padding on the td-element. Also, remove the margin on the p-element
-      //    * to function in non-Outlook clients.
-      //    */
-      //   &.padding
-      //     padding-top: 16px
-      //     p
-      //       margin-top: 0
-
-
-
-.article-content
-  h1
-    margin: 0
-    font-size: 2em
-    line-height: 1em
-    text-align: center
-    font-weight: 200
-    margin: 0.5em 0
-
-  h2
-    color: #3C3C3C
-    font-size: 16px
-    line-height: 18px
-    margin: 0
-    margin-bottom: 10px
-
-
-  .more
-    font-family: Brown
-    color: #999
-    display: block
-    // text-transform: uppercase
-    // font-size: 10px
-    // margin-left: 2px
-    // white-space: nowrap
-    text-decoration: none
-    text-align: center
-    margin: 4px 0
-
-
-  p
-    font-size: 14px
-    margin: 14px 0
-    line-height: 1.3em
-    color: #4d4d4d
-    margin: 0
-    // font-family: "Caslon #540 W01", Times
-    // display: inline
-    text-align: center
-
-a
+a.more
+  font-family: 'Brown'
+  color: $lightText
+  display: block
   text-decoration: none
-  font-family: Brown
-    color: black
-  &:visited
-    color: black
-  &:active
-    color: black
+  text-align: center
+  margin: 4px 0
+  font-size: 14px
 
 
-img
-  width: 100%
+p
+  font-size: 14px
+  margin: 14px 0
+  line-height: 18px
+  color: black
+  margin: 0
+  // font-family: "Caslon #540 W01", Times
+  // display: inline
+  text-align: center
+
+
+
+.content
+  img
+    width: 100%
 
 
 
@@ -191,12 +127,10 @@ img
 
 .header
   width: 100%
-  margin-bottom: -2.6em
-  position: relative
-  z-index: 10
+  // margin-bottom: -40px
+  // position: relative
+  // z-index: 10
   text-transform: uppercase
-  h1
-    font-size: 2em
 
 
 .seperator
@@ -213,44 +147,41 @@ img
     padding: 0 13px
     font-family: "Caslon #540 W01", Times
     font-size: 18px
+    color: black
 
 .textright,
 .textleft
   width: 100%
   overflow: hidden
-  table.image
-    width: 48%
+  position: relative
+  td
+    width: 50%
+  td.image
     line-height: 0
-    // height: 100%
-  table.text
-    // display: block
-    width: 48%
-
-.textright
-  table.text
-    float: right
-  table.image
-    float: left
+  td.text
+    padding: 10px
 
 .textleft
-  table.text
-    float: left
-  table.image
-    float: right
+  td.text
+    position: relative
+    left: -50%
+  td.image
+    position: relative
+    left: 50%
+
 
 .threecolums
   width: 100%
+  text-align: center
+  padding: 10px
   table.item
-    width: 187px
-    margin-left: 20px
+    padding: 10px
+    display: table-cell
     img
       display: block
-      width: 100%
 
 .banner
   width: 100%
-  img
-    width: 100%
   &.wide
     width: 100%
     // display: none
@@ -260,19 +191,28 @@ img
 
 
 .footer
+  width: 100%
   a
     text-decoration: none
+    margin: 0 10px
 
-.button
-  background-color: $blue
-  padding: 10px 20px
-  color: $white
-  border-bottom: 2px solid darken($blue, 10%)
-  text-decoration: none
-  border-radius: 2px
-  &.green
-    background-color: $green
-    border-bottom: 2px solid darken($green, 10%)
+  .links
+    font-size: 14px
+
+  .street-address
+    color: $standardGrey
+    white-space: normal
+    font-family: "Caslon #540 W01", Times
+    font-size: 13px
+
+
+  .social
+    // width: 100%
+    text-align: center
+    img
+      width: 14px
+      height: 14px
+      display: inline
 
 
 
