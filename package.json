@@ -5,7 +5,6 @@
     "jade": "*",
     "gulp-autoprefixer": "*",
     "gulp-inline-css": "*",
-    "gulp-ruby-sass": "*",
     "gulp-notify": "*",
     "gulp-rename": "*",
     "gulp-util": "*",
@@ -15,6 +14,7 @@
   "dependencies": {
     "browser-sync": "*",
     "connect-modrewrite": "*",
+    "gulp-sass": "^2.1.0",
     "gulp-watch": "*"
   }
 }

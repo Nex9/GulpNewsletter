@@ -5,7 +5,7 @@ gutil       = require('gulp-util')
 notify      = require('gulp-notify')
 prefix      = require('gulp-autoprefixer')
 inline      = require('gulp-inline-css')
-sass        = require 'gulp-ruby-sass'
+sass        = require 'gulp-sass'
 path        = require('path')
 rename      = require('gulp-rename')
 fileinclude = require('gulp-file-include')
@@ -25,7 +25,7 @@ gulp.task 'bs-reload', ->
 # Compile less and autoprefix
 gulp.task 'sass', ->
   gulp.src('./src/css/*.sass')
-    .pipe sass()
+    .pipe sass({indentedSyntax: true, quiet: true})
     .pipe prefix('last 20 versions')
     .pipe gulp.dest('./compiled/css')
     # .pipe notify('SASS compiled and minified')
