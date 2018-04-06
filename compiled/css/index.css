@@ -71,6 +71,9 @@ body {
             margin: 12px 0;
             line-height: 19px;
             margin: 3px 0; }
+        body table.container table.inner table.content p.small {
+          font-size: 10px;
+          color: gray; }
         body table.container table.inner table.content td {
           /**
            * Outlook doesn't support margin-attributes, instead – if we need it – we
