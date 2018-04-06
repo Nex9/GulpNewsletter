@@ -1,0 +1,66 @@
+@import url("//fast.fonts.net/t/1.css?apiType=css&projectid=2fe0870f-5c0e-418f-8dad-d561c78df47a");
+@font-face {
+  font-family: 'Basis Grotesque';
+  src: url("../fonts/basis-grotesque-light.eot");
+  src: url("../fonts/basis-grotesque-light.eot?#iefix") format("embedded-opentype"), url("../fonts/basis-grotesque-light.woff") format("woff"), url("../fonts/basis-grotesque-light.woff2") format("woff2"), url("../fonts/basis-grotesque-light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Basis Grotesque';
+  src: url("../fonts/basis-grotesque-regular.eot");
+  src: url("../fonts/basis-grotesque-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/basis-grotesque-regular.woff") format("woff"), url("../fonts/basis-grotesque-regular.woff2") format("woff2"), url("../fonts/basis-grotesque-regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+
+.basis-grotesque {
+  font-family: 'Basis Grotesque', Helvetica, Arial, sans-serif; }
+
+@font-face {
+  font-family: 'Ogg Roman';
+  src: url("../fonts/Ogg-Roman.eot");
+  src: url("../fonts/Ogg-Roman.eot?#iefix") format("embedded-opentype"), url("../fonts/Ogg-Roman.woff") format("woff"), url("../fonts/Ogg-Roman.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+
+.ogg-roman {
+  font-family: 'Ogg Roman', Garamond, Times, serif;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "LetterGothic";
+  src: url("../fonts/61c2fbda-5f79-48b0-b706-abc13e9e02e2.eot?#iefix");
+  src: url("../fonts/61c2fbda-5f79-48b0-b706-abc13e9e02e2.eot?#iefix") format("eot"), url("../fonts/b611d079-2caa-457b-bc77-c63fee153155.woff2") format("woff2"), url("../fonts/1245093c-7ba9-4231-b865-9b5cebac4e06.woff") format("woff"), url("../fonts/18c7fb62-f5e3-4749-8292-fc96e86f1d72.ttf") format("truetype"), url("../fonts/ccd6b951-a307-420a-a445-800c79a782f6.svg#ccd6b951-a307-420a-a445-800c79a782f6") format("svg");
+  font-style: normal;
+  font-weight: 400; }
+
+@font-face {
+  font-family: "LetterGothic";
+  src: url("../fonts/13a729c9-c66d-4c0f-a6cc-02eef6a8e133.eot?#iefix");
+  src: url("../fonts/13a729c9-c66d-4c0f-a6cc-02eef6a8e133.eot?#iefix") format("eot"), url("../fonts/015e4349-9b15-4fdf-9b64-cd7a82632b50.woff2") format("woff2"), url("../fonts/efe646e0-b2da-4466-90d2-c92dbc30fb0d.woff") format("woff"), url("../fonts/030879d0-9a75-4eab-9465-b73afa1da0c2.ttf") format("truetype"), url("../fonts/f19e70f6-20bd-4d4d-a917-777c64e44e37.svg#f19e70f6-20bd-4d4d-a917-777c64e44e37") format("svg");
+  font-style: italic;
+  font-weight: 400; }
+
+@font-face {
+  font-family: "LetterGothic";
+  src: url("../fonts/4d2197c7-06af-4ad1-9ae2-3fcd6d0b18a7.eot?#iefix");
+  src: url("../fonts/4d2197c7-06af-4ad1-9ae2-3fcd6d0b18a7.eot?#iefix") format("eot"), url("../fonts/b377aaa3-cf01-4075-88ad-fc43f640a648.woff2") format("woff2"), url("../fonts/25c92a78-6edd-4585-a780-6a17d59c841b.woff") format("woff"), url("../fonts/c8229795-b4d0-4080-90db-7034b1d840c7.ttf") format("truetype"), url("../fonts/ed2bd10a-35b3-4ea3-92b0-f63fd235dbec.svg#ed2bd10a-35b3-4ea3-92b0-f63fd235dbec") format("svg");
+  font-style: normal;
+  font-weight: 700; }
+
+@font-face {
+  font-family: "LetterGothic";
+  src: url("../fonts/5e127f2a-0513-40d5-a882-646d5964da8c.eot?#iefix");
+  src: url("../fonts/5e127f2a-0513-40d5-a882-646d5964da8c.eot?#iefix") format("eot"), url("../fonts/886e02a8-b7b2-4153-a861-b36637d41828.woff2") format("woff2"), url("../fonts/2f2849da-eb65-4d47-a8cc-f4500d2354f6.woff") format("woff"), url("../fonts/c9ff66f3-1379-4e4b-a2a4-deeada59a751.ttf") format("truetype"), url("../fonts/f7a189de-67d4-43cc-b7a5-2372eba68623.svg#f7a189de-67d4-43cc-b7a5-2372eba68623") format("svg");
+  font-style: italic;
+  font-weight: 700; }
+
+.letter-gothic {
+  font-family: "LetterGothic", Courier, monospace; }
+
+@font-face {
+  font-family: 'TrojanRegular';
+  src: url("../fonts/trojan-regular-webfont.eot");
+  src: url("../fonts/trojan-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/trojan-regular-webfont.woff2") format("woff2"), url("../fonts/trojan-regular-webfont.woff") format("woff"), url("../fonts/trojan-regular-webfont.ttf") format("truetype"), url("../fonts/trojan-regular-webfont.svg#trojanregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }

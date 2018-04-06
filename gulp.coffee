@@ -48,7 +48,14 @@ gulp.task 'fileinclude', ['sass'], ->
 # Make inline html-file
 gulp.task 'inlineCss', ['fileinclude'], ->
   gulp.src(newHtml)
-    .pipe(inline(applyStyleTags: false, removeStyleTags: false))
+    .pipe(inline(
+      # applyStyleTags: false,
+      # removeStyleTags: false
+      applyStyleTags: true,
+      applyLinkTags: true,
+      removeStyleTags: true,
+      removeLinkTags: true
+    ))
     .pipe rename('index-inline.html')
     .pipe gulp.dest(targetHtml)
     .pipe notify('CSS inlined')
@@ -70,5 +77,5 @@ gulp.task 'prepare', ['inlineCss'], (next) ->
 
 gulp.task 'default', ['prepare', 'browser-sync'], ->
   gulp.watch('./src/index.html', ['inlineCss'])
-  gulp.watch('./src/css/index.sass', ['sass'])
-  gulp.watch('./src/css/media-queries.sass', ['fileinclude'])
+  gulp.watch('./src/css/index.sass', ['sass','inlineCss'])
+  gulp.watch('./src/css/fonts.sass', ['fileinclude'])
