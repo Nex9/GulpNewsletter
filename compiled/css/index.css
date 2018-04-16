@@ -1,0 +1,147 @@
+@charset "UTF-8";
+/**
+ * Colors
+ */
+.small-text {
+  font-size: 10px;
+  color: gray; }
+
+body {
+  margin: 0;
+  background: white;
+  -webkit-font-smoothing: antialiased;
+  font-family: Helvetica; }
+  body p,
+  body h2,
+  body h3 {
+    color: black; }
+    body p a,
+    body p unsubscribe,
+    body p webversion,
+    body h2 a,
+    body h2 unsubscribe,
+    body h2 webversion,
+    body h3 a,
+    body h3 unsubscribe,
+    body h3 webversion {
+      text-decoration: none; }
+      body p a:hover,
+      body p unsubscribe:hover,
+      body p webversion:hover,
+      body h2 a:hover,
+      body h2 unsubscribe:hover,
+      body h2 webversion:hover,
+      body h3 a:hover,
+      body h3 unsubscribe:hover,
+      body h3 webversion:hover {
+        text-decoration: underline; }
+  body .text-right {
+    text-align: right; }
+  body .text-center {
+    text-align: center; }
+  body .text-left {
+    text-align: left; }
+  body .h-padding {
+    padding-left: 15px;
+    padding-right: 15px; }
+  body h2 {
+    font-size: 36px;
+    line-height: 1.2em;
+    margin: 0 0 22px;
+    text-align: center; }
+  body h3 {
+    font-size: 19px;
+    margin: 0 0 18px; }
+  body a {
+    color: black; }
+  body table, body tr, body td {
+    border-spacing: 0px !important; }
+  body table.container {
+    width: 100%;
+    background: white; }
+    body table.container table.inner {
+      max-width: 600px; }
+      body table.container table.inner table.content {
+        position: relative;
+        width: 100%; }
+        body table.container table.inner table.content.white-bg {
+          background-color: #fff; }
+        body table.container table.inner table.content p {
+          font-weight: 400;
+          font-size: 18px;
+          text-align: center;
+          margin: 16px 0;
+          line-height: 1.9em; }
+          body table.container table.inner table.content p.webversion, body table.container table.inner table.content p.unsubscribe {
+            font-size: 12px;
+            margin: 12px 0;
+            line-height: 19px;
+            margin: 3px 0; }
+          body table.container table.inner table.content p.small {
+            font-size: 10px;
+            color: gray; }
+        body table.container table.inner table.content td {
+          /**
+           * Outlook doesn't support margin-attributes, instead – if we need it – we
+           * set a padding on the td-element. Also, remove the margin on the p-element
+           * to function in non-Outlook clients.
+           */ }
+          body table.container table.inner table.content td.padding {
+            padding-top: 16px; }
+            body table.container table.inner table.content td.padding p {
+              margin-top: 0; }
+        body table.container table.inner table.content .image-caption {
+          font-size: 13px;
+          color: #999999;
+          position: absolute;
+          right: 25px;
+          bottom: 15px; }
+      body table.container table.inner table.footer {
+        width: 100%; }
+        body table.container table.inner table.footer.white-bg {
+          background-color: #fff; }
+        body table.container table.inner table.footer p {
+          font-weight: 400;
+          font-size: 18px;
+          margin: 16px 0;
+          line-height: 1.9em; }
+          body table.container table.inner table.footer p.webversion, body table.container table.inner table.footer p.unsubscribe {
+            font-size: 12px;
+            margin: 12px 0;
+            line-height: 19px;
+            margin: 3px 0; }
+          body table.container table.inner table.footer p.small {
+            font-size: 10px;
+            color: gray; }
+        body table.container table.inner table.footer td {
+          /**
+           * Outlook doesn't support margin-attributes, instead – if we need it – we
+           * set a padding on the td-element. Also, remove the margin on the p-element
+           * to function in non-Outlook clients.
+           */ }
+          body table.container table.inner table.footer td.padding {
+            padding-top: 16px; }
+            body table.container table.inner table.footer td.padding p {
+              margin-top: 0; }
+      body table.container table.inner table.header img {
+        width: 240px;
+        max-width: 240px; }
+      body table.container table.inner table.footer img {
+        display: block;
+        margin: 0 auto; }
+  body a.cta-button {
+    border: none;
+    background: none;
+    font-size: 18px;
+    position: relative; }
+    body a.cta-button span {
+      padding-top: 10px;
+      display: block;
+      width: 30px;
+      border-bottom: 2px solid black;
+      margin: 0 auto; }
+  body .col .col-inner {
+    padding: 15px 15px 5px; }
+  body .col.gmail-fix {
+    display: block;
+    width: 100%; }

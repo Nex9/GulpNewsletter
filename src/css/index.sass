@@ -5,7 +5,7 @@ $backgroundGrey: #fff
 $standardGrey: #fff
 $white: #fff
 $text: black
-$h-padding: 35px
+$h-padding: 15px
 
 
 .small-text
@@ -47,6 +47,7 @@ body
     font-size: 36px
     line-height: 1.2em
     margin: 0 0 22px
+    text-align: center
 
   h3
     font-size: 19px
@@ -64,6 +65,7 @@ body
     table.inner
       max-width: 600px
       table.content
+        position: relative
         width: 100%
         &.white-bg
           background-color: $white
@@ -71,6 +73,7 @@ body
         p
           font-weight: 400
           font-size: 18px
+          text-align: center
           // Set the margins the same as font size for correct viewing in Outlook
           margin: 16px 0
           line-height: 1.9em
@@ -97,8 +100,11 @@ body
 
         .image-caption
           font-size: 13px
-          // font-weight: bold
-          color: black
+          color: #999999
+          position: absolute
+          right: 25px
+          bottom: 15px
+
 
       table.footer
         width: 100%
@@ -140,7 +146,6 @@ body
         img
           display: block
           margin: 0 auto
-          padding-bottom: 30px
 
 
 
